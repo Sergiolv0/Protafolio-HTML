@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    /* padding: 0; */
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+html> {
+       scroll-behavior: smooth; /*Dersplazamiento suave al hacer*/
+}
+
+body{
+    color: white; /* color del texto*/
+    background: #000; /* color de fondo*/
+}
+/*
+------------------------------------------------------
+1. Navegacion Fija
+*/
+header nav{
+    top:0;
+    width: 100%;
+    background: #000;
+    padding: 15px;
+    z-index: 1000; /* Asegurar que este por encima de otros elementeos*/
+    position: fixed; /* ¡Fijar el menu en la pantalla*/
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    font-size: 22px
+}
+
+header nav ul li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+header nav ul li a:hover{
+    color: #0fc;
+}
+/*
+-------------------------------------------------------------------
+2. Seccion Inicio.
+*/
+.hero{
+    height: 100vh ; /* que ocupe el 100% de la pantalla*/
+    display: flex; /* activando el display flex*/
+    flex-direction: column; /* organiza los elementos en columna, de arriba hacia abajo*/
+    justify-content: center; /* Centra verticalmente los elementos */
+    align-items: center; /* centra horizontalmente los elementos */
+    background: linear-gradient(135deg, #000, #1a1a1a, #0fc);
+}
+
+.hero-contenido{
+    max-width: 800px; /* asigna un archivo maximo*/
+    text-align: center; /* centra todo el texto del centenedor*/
+    margin: 0 auto;
+}
+
+.hero-titulo{
+    font-size: 3rem; /* tamaño de letra*/
+    margin-bottom: 15px; /*margen jacia abajo de 15px*/
+}
+
+.hero-subtitulo{
+    color: #0fc;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.hero-descripcion{
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+.hero-eslogan{
+    font-size: 1rem;
+    font-size: static;
+    margin-bottom: 40px;
+    opacity: 0.8;
+}
+
+
+.hero-foto{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #0fc;
+    margin-bottom: 20px;
+}
+
+
+.hero-estadísticas{
+    display: flex; /* Alinear en una sola fila*/
+    justify-content: center;
+    gap: 40px; /*separar, poner un espaciado entre elementos*/
+    margin-bottom: 40px;
+    flex-wrap: wrap; /* Permite que ponga en columna cuando es tamaño movil*/
+}
+
+
+.esta-item{
+    text-align: center; /*centrar texto*/
+}
+
+
+.esta-numero{
+    display: block;
+    font-size: 2rem;
+    font-weight: 550;
+    color: #0fc;
+    margin-bottom: 5px;
+}
+
+
+.esta-nombre{
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+
+.hero-botones{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+
+.btn-whatsapp, .btn-linkedin, .btn-cv{
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    border-radius: 5px;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid;
+}
+
+.btn-whatsapp{
+    border-color: #25D366;
+    color: #25D366
+}
+
+.btn-linkedin{
+    border-color: #000;
+    color: #000;
+}
+
+.btn-cv{
+    border-color: #713600;
+    color: #713600;
+}
