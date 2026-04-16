@@ -18,8 +18,8 @@ document.getElementById("formulario-contacto")
     console.log(mensaje.value);
     Swal.fire({
         title: "Te registraste correctamente!",
-        text: "Tus datos se registraron bien!",
-        icon: "success"
+        text: "Tus datos fueron enviados con exito!",
+        icon: "success" ,
+        confirmButtonText: "OK"
         });
-})
-
+});
